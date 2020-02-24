@@ -1,6 +1,1 @@
-
-Play this game on itch :
-
-https://yokkidack.itch.io/cloud-chaser
-
-![alt text](https://itch.io/embed/575583?bg_color=6bb8e2&amp;fg_color=ffffff&amp;link_color=635bfa "text")
+![play](https://img.shields.io/badge/itch.io-play%20now-red?link=https://yokkidack.itch.io/cloud-chaser)
