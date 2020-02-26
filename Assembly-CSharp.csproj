@@ -62,14 +62,16 @@
      <Compile Include="Assets\Scripts\RandomPlanePick.cs" />
      <Compile Include="Assets\Scripts\ScoreUpdate.cs" />
      <Compile Include="Assets\Scripts\TitleToMain.cs" />
-     <None Include="Assets\MaterialsShaders\ORANGE.shader" />
-     <None Include="Assets\MaterialsShaders\stem_light.shader" />
-     <None Include="Assets\MaterialsShaders\grass.shader" />
-     <None Include="Assets\MaterialsShaders\foliage_red.shader" />
-     <None Include="Assets\MaterialsShaders\stem_dark.shader" />
-     <None Include="Assets\MaterialsShaders\foliage_dark_red.shader" />
-     <None Include="Assets\MaterialsShaders\target_yellow.shader" />
-     <None Include="Assets\MaterialsShaders\orange_light.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\ORANGE.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\stem_light.shader" />
+     <None Include="Assets\MaterialsShaders\PopShader.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\grass.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\foliage_red.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\ColorUnlit.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\stem_dark.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\foliage_dark_red.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\target_yellow.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\orange_light.shader" />
      <None Include="Assets\MaterialsShaders\camera\Pixelate.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/igor/CloudChaser/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
