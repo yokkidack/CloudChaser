@@ -67,6 +67,7 @@
      <None Include="Assets\MaterialsShaders\PopShader.shader" />
      <None Include="Assets\MaterialsShaders\shaders\grass.shader" />
      <None Include="Assets\MaterialsShaders\shaders\foliage_red.shader" />
+     <None Include="Assets\MaterialsShaders\shaders\ColorUnlit.shader" />
      <None Include="Assets\MaterialsShaders\shaders\stem_dark.shader" />
      <None Include="Assets\MaterialsShaders\shaders\foliage_dark_red.shader" />
      <None Include="Assets\MaterialsShaders\shaders\target_yellow.shader" />

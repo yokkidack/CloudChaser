@@ -1,13 +1,13 @@
-﻿Shader "Unlit/orange_light"
+﻿Shader "Unlit/ColorUnlit"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        // _MainTex ("Texture", 2D) = "white" {}
+        _Color ("Color" , Color) = (1,1,1,0)
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" }
-        LOD 100
 
         Pass
         {
@@ -15,7 +15,7 @@
             #pragma vertex vert
             #pragma fragment frag
             // make fog work
-            #pragma multi_compile_fog
+            // #pragma multi_compile_fog
 
             #include "UnityCG.cginc"
 
@@ -31,19 +31,19 @@
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
             };
-
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
+            //
+            // sampler2D _MainTex;
+            // float4 _MainTex_ST;
 
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                //o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }
-
+            float4 _Color;
             fixed4 frag (v2f i) : SV_Target
             {
                 // // sample the texture
@@ -51,7 +51,7 @@
                 // // apply fog
                 // UNITY_APPLY_FOG(i.fogCoord, col);
                 // return col;
-                return float4(1, 0.8, 0.35, 0);
+                return _Color;
             }
             ENDCG
         }
